@@ -37,7 +37,7 @@ for l in soup1.find_all('a', {'class': 'l'}):
 	li = l.get('href')
 	break
 
-f = file('-----Your path---------'+command+'.mp4', 'w')
+f = file('-----Your download path---------'+command+'.mp4', 'w')
 url = urllib.urlopen(li)
 print 'Wait, your video is being downloaded'
 blocksize = 8192
